@@ -18,12 +18,12 @@ Route::get('/', function () {
 Route::get('/Clientes', function () {
     return view('Clientes.index');
 });
-Route::resource('Clientes','App\Http\Controllers\ClientesController')->middleware('auth');
-Route::resource('DatosPersonales','App\Http\Controllers\DatosPersonalesController')->middleware('auth');
-Route::resource('Galeria','App\Http\Controllers\GaleriaController')->middleware('auth');
-Route::resource('Informacion','App\Http\Controllers\InformacionController')->middleware('auth');
-Route::resource('Plandealimentacion','App\Http\Controllers\PlandealimentacionController')->middleware('auth');
-Route::resource('Medidas','App\Http\Controllers\MedidasController')->middleware('auth');
+Route::resource('Clientes','App\Http\Controllers\ClientesController');
+Route::resource('DatosPersonales','App\Http\Controllers\DatosPersonalesController');
+Route::resource('Galeria','App\Http\Controllers\GaleriaController');
+Route::resource('Informacion','App\Http\Controllers\InformacionController');
+Route::resource('Plandealimentacion','App\Http\Controllers\PlandealimentacionController');
+Route::resource('Medidas','App\Http\Controllers\MedidasController');
 
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {

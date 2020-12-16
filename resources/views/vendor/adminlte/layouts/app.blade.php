@@ -136,7 +136,7 @@
           <img src="{{ asset('img/BeretaTeam6.png')}}" class="img-circle elevation-5" alt="User Image">
         </div>
         <div class="info">
-            <a style="color: white" href="#" class="d-block">{{ Auth::user()->username }}</a>
+            <a style="color: white" href="#" class="d-block">Nestor Usiel García López</a>
         </div>
       </div>
 
